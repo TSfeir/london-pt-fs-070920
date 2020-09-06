@@ -5,13 +5,13 @@ We'll let you know when we deploy new exercises, you should then pull the change
 To do that, run this in your terminal:
 
 ```git
-git pull git@github.com:CodersInHoods/london-pt-fs-290620.git master
+git pull git@github.com:CodersInHoods/london-pt-fs-070920.git master
 ```
 
 or if you are using HTTPS:
 
 ```git
-git pull https://github.com/CodersInHoods/london-pt-fs-290620.git master
+git pull https://github.com/CodersInHoods/london-pt-fs-070920.git master
 ```
 
 ## When you want to push your code
