@@ -4,11 +4,15 @@
  * create a variable {greeting} which should be a string
  */
 
+let greeting = "Hello world,"; 
+
 /**
  * Exercise 2
  *
  * create a variable {name} which should be a string
  */
+
+let name = "Thomas"
 
 /**
  * Exercise 3
@@ -17,6 +21,8 @@
  * concatenation of {greeting} and {name}
  */
 
+ let phrase = greeting+" "+name;
+
 /**
  * Exercise 4
  *
@@ -24,11 +30,15 @@
  * it should be a float.
  */
 
+ let price = 3.99;
+
 /**
  * Exercise 5
  *
  * create a variable {quantity} which should has type number.
  */
+
+let quantity = 100;
 
 /**
  * Exercise 6
@@ -37,12 +47,18 @@
  * equal to price multiplied by quantity
  */
 
+let total = price * quantity;
+
 /**
  * Exercise 7
  *
  * create a variables {age1}, {age2}, {age3} which should be
  * integers
  */
+
+let age1 = 25;
+let age2 = 30;
+let age3 = 35;
 
 /**
  * Exercise 8
@@ -51,12 +67,17 @@
  * the mean of age1, age2 and age3
  */
 
+let averageAge = (age1 + age2 + age3) / 3;
+
 /**
  * Exercise 9
  *
  * create a variable {loggedIn} which should be
  * a boolean and equals true.
  */
+
+let loggedIn = true;
+
 
 /**
  * Exercise 10
@@ -65,12 +86,16 @@
  * a boolean and equals false.
  */
 
+let adminUser = false;
+
 /**
  * Exercise 11
  *
  * create a variable {missingInfo} which should be
  * equal to undefined
  */
+
+let missingInfo;
 
 /**
  * Exercise 12
