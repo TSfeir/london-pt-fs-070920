@@ -29,5 +29,5 @@ git push
 
 - [Lesson 1 - Intro](https://docs.google.com/presentation/d/1d5d_zA3JPCZEV9oX_YxsOmIWCai62CtGVfQeNP5wAWw/edit?usp=sharing)
 - [Lesson 2 - Variables, Types, Conditions, Functions](https://docs.google.com/presentation/d/1o3Fk6UOwwg3Q2zZPckWN35pGbJ_t9-kPjzbcSDF4esE/edit?usp=sharing)
-- [Lesson 3 - HTML and CSS Part 1: slides](https://docs.google.com/presentation/d/1A-X5qBGN8EdJp6QR72uyjqbW5tn_-ARXVIsjqko9p4s/edit?usp=sharing)
+- [Lesson 3 - HTML and CSS Part 1](https://docs.google.com/presentation/d/1A-X5qBGN8EdJp6QR72uyjqbW5tn_-ARXVIsjqko9p4s/edit?usp=sharing)
 - [Lesson 4 - HTML and CSS Part 2](https://docs.google.com/presentation/d/1UAXhZEssUqjJs-XvAk_qMWvV-V0v_4pI-2xEnG9SgvM/edit?usp=sharing)
