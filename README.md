@@ -33,3 +33,5 @@ git push
 - [Lesson 4 - HTML and CSS Part 2](https://docs.google.com/presentation/d/1UAXhZEssUqjJs-XvAk_qMWvV-V0v_4pI-2xEnG9SgvM/edit?usp=sharing)
 - [Lesson 5 - Arrays and objects](https://docs.google.com/presentation/d/1l4WAeC3bPXTbHHi1cZZJVaMfZz8Y4noKYXEDKI-OURw/edit?usp=sharing)
 - [Lesson 6 - Loops](https://docs.google.com/presentation/d/13pac-8T_O10tsnMnMYIetB3paZFDqC_K_bxDB7Aryew/edit?usp=sharing)
+- [Lesson 7 - Functions](https://docs.google.com/presentation/d/1hHmFQMExajTgY7EAtHBV-DrplPwprIbzod1Cbn3mD4g/edit?usp=sharing)
+- [Lesson 8 - JS command-line app](https://docs.google.com/presentation/d/1_xcTCjqrEe-dovG1rrB_A4iYkRe0mkE4O8-V9ABQN4Q/edit?usp=sharing)
