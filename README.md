@@ -24,6 +24,7 @@ git push
 ```
 
 ## Project repos
+[Module 1 - CLI APP](https://github.com/CodersInHoods/js-cli-project-london-pt-fs-070920)
 
 ## Slides
 
