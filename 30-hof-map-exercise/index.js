@@ -10,6 +10,13 @@
  * a new array.
  */
 
+const convertToPositive = (array) => {
+    const newArray = array.map(num => num < 0 ? (num * (-1)) : (num));           
+    console.log(newArray);
+    return(newArray);
+} 
+convertToPositive([1, 2, -5, 8, -4]);
+
 /**
  * Exercise 2
  *
@@ -23,12 +30,28 @@
  * ]) will return ['Alex', 'John']
  */
 
+const getAllNames = (users) => {
+    const userNames = users.map( users => {
+        return users.name
+    });
+    return userNames;
+}
+
+    
+
 /**
  * Exercise 3
  *
  * create a function {greetAll} that takes array of names as a parameter
  * and return a new array of greetings "Hi, {name}!"
  */
+
+const greetAll = (arrayNames) => {
+    const greetNames = arrayNames.map( arrayNames => {
+        return `Hi, ${arrayNames}!`;
+    })
+    return greetNames;
+} 
 
 /**
  * Exercise 4
@@ -37,3 +60,8 @@
  * and multiply all numbers inside array by 5 and return the whole array
  * with multiplied numbers
  */
+
+const multiplyAllNumbers = (array) => {
+    const multiplyBy5 = array.map(array => typeof array === 'number' ? array * 5 : array);
+    return multiplyBy5;
+}

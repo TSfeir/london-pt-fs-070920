@@ -16,6 +16,12 @@
  *
  */
 
+const forEach = (array, callback) => {
+    for (i = 0; i < array.length; i++) {
+        callback(array[i],i);
+    }
+ }
+
 /**
  * Exercise #2
  *
@@ -29,6 +35,14 @@
  * time the callback was invoked.
  *
  */
+
+const map = (array, callback) => {
+    newArray = []
+    for (i = 0; i < array.length; i++) {
+        newArray.push(callback(array[i], i));
+    }
+    return newArray;
+}
 
 /**
  * Exercise #3
@@ -44,6 +58,17 @@
  *
  */
 
+const filter = (array, callback) => {
+    newArray = []
+    for (i = 0; i < array.length; i++) {
+        if (callback(array[i], i) == true) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+
 /**
  * Exercise #4
  *
@@ -58,6 +83,14 @@
  *
  */
 
+const find = (array, callback) => {
+    for (i = 0; i < array.length; i++) {
+        if (callback(array[i], i) == true) {
+            return array[i];
+        }
+    }
+}
+
 /**
  * Exercise #5
  *
@@ -71,6 +104,14 @@
  * callback returns a truthy value.
  *
  */
+
+const findIndex = (array, callback) => {
+    for (i = 0; i < array.length; i++) {
+        if (callback(array[i], i) == true) {
+            return i;
+        }
+    }
+} 
 
 /**
  * Exercise #6
@@ -87,6 +128,18 @@
  *
  */
 
+const every = (array, callback) => {
+    for (i = 0; i < array.length; i++){
+        if (callback(array[i], i) === true){
+            continue;
+        } else {
+            return false;
+            break;
+        };
+    }
+    return true;
+} 
+
 /**
  * Exercise #7
  *
@@ -101,6 +154,14 @@
  * a truthy value.
  *
  */
+
+const some = (array, callback) => {
+    for (i = 0; i < array.length; i++){
+        if (callback(array[i], i) === true){
+            return true;
+        }
+    }
+}
 
 /**
  * Exercise #8
@@ -123,3 +184,10 @@
  * value.
  *
  */
+
+ const reduce = (array, callback, initialValue = 0) => {
+     for (i = 0; i < array.length; i++){
+         initialValue = callback(initialValue,array[i],i);
+     }
+     return initialValue;
+ }
