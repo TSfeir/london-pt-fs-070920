@@ -24,7 +24,9 @@ git push
 ```
 
 ## Project repos
+
 [Module 1 - CLI APP](https://github.com/CodersInHoods/js-cli-project-london-pt-fs-070920)
+[Module 2 - Ecommerce website](https://github.com/CodersInHoods/e-commerce-london-pt-fs-070920)
 
 ## Slides
 
@@ -36,3 +38,5 @@ git push
 - [Lesson 6 - Loops](https://docs.google.com/presentation/d/13pac-8T_O10tsnMnMYIetB3paZFDqC_K_bxDB7Aryew/edit?usp=sharing)
 - [Lesson 7 - Functions](https://docs.google.com/presentation/d/1hHmFQMExajTgY7EAtHBV-DrplPwprIbzod1Cbn3mD4g/edit?usp=sharing)
 - [Lesson 8 - JS command-line app](https://docs.google.com/presentation/d/1_xcTCjqrEe-dovG1rrB_A4iYkRe0mkE4O8-V9ABQN4Q/edit?usp=sharing)
+- [Lesson 9 - DOM Manipulation](https://docs.google.com/presentation/d/1eYFADZtheqChCeH2pp6r3BLjf9N-66aqDqYSL91OQA0/edit?usp=sharing)
+- [Lesson 10 - Event listeners](https://docs.google.com/presentation/d/1RHRjx6_6slmYaH19GOaRgSmP0M7CGLBcBfuiHYTKtho/edit?usp=sharing)
