@@ -1,0 +1,46 @@
+@keyframes slideIn {
+  0% {
+    transform: translate(-200%, 0);
+  }
+  70% {
+    transform: translate(10%, 0);
+  }
+  80% {
+    transform: translate(-5%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(10%, 0);
+  }
+  100% {
+  }
+}
+
+.message {
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 10;
+  transform: translate(-200%, 0);
+}
+
+.visible {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.hide {
+    animation: slideOut 0.5s ease-out forwards;
+}
