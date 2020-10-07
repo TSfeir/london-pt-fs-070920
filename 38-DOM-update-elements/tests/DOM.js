@@ -1,8 +1,6 @@
 document.body.innerHTML = `
 <h1></h1>
-<div>
-    <span>div</span>
-</div>
+<div></div>
 <img src="" alt="" />
 <a href="http://googe.com">Go to Google</a>
 <div class="btns">
