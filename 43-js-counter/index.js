@@ -1,6 +1,6 @@
 let step = 0;
 let counter = 0;
-
+let interval = null;
 
 
 /**
@@ -24,11 +24,6 @@ const action = (symbol = `+` || `-`) => {
     counterValue.innerText = counter;
 }
 
-// const counterValue = document.querySelector('.counter_value');
-// counterValue.addEventListener('click', () => {
-//     console.log(counter);
-//     counterValue.innerHTML = counter;
-// })
 /**
  * Exercise 2
  *
@@ -40,13 +35,13 @@ const action = (symbol = `+` || `-`) => {
  * NOTE: {step} should be an integer
  *
  */
-const setStepClick = document.querySelector(`.step_form button`);
-setStepClick.addEventListener('click', (event) => {
+const setStepClick = document.querySelector(`form.step_form`);
+setStepClick.addEventListener('submit', () => {
     const stepsSetByUser = document.querySelector('.step_form input');
-    step = stepsSetByUser.value;
+    step = parseInt(stepsSetByUser.value);
     stepsSetByUser.value = 1;
     const stepValue = document.querySelector(`.step_value`);
-    stepValue.innerHTML = step;
+    stepValue.innerText = step;
 })
 
 
@@ -86,9 +81,10 @@ increment.addEventListener('click', () => {action(`+`)});
 
 const autoDecrement = document.querySelector('#auto_decrement');
 autoDecrement.addEventListener('click', () => {
-    const intervalAutoDown = setInterval(() => {action(`-`)},1000);
-    const stopAutoNegative = document.querySelector('#stop_auto');
-    stopAutoNegative.addEventListener('click', () => {clearInterval(intervalAutoDown)});
+    if (interval) {
+        clearInterval(interval);
+    }
+    interval = setInterval(() => {action(`-`)},1000);
 })
 
 /**
@@ -102,9 +98,10 @@ autoDecrement.addEventListener('click', () => {
 
 const autoIncrement = document.querySelector('#auto_increment');
 autoIncrement.addEventListener('click', () => {
-    const intervalAutoUp = setInterval(() => {action(`+`)},1000);
-    const stopAutoPositive = document.querySelector('#stop_auto');
-    stopAutoPositive.addEventListener('click', () => {clearInterval(intervalAutoUp)});
+    if (interval) {
+        clearInterval(interval);
+    }
+    interval = setInterval(() => {action(`+`)},1000);
 })
 
 
@@ -115,4 +112,5 @@ autoIncrement.addEventListener('click', () => {
  * the auto counter should stop
  */
 
-
+ const stopAutoNegative = document.querySelector('#stop_auto');
+ stopAutoNegative.addEventListener('click', () => {clearInterval(interval)});
