@@ -115,7 +115,7 @@ describe("createAMessage", () => {
       () => {
         expect(document.querySelector(".visible")).toBeTruthy();
       },
-      { timeout: 3000 }
+      { timeout: 3500 }
     );
   });
 
@@ -127,7 +127,7 @@ describe("createAMessage", () => {
       () => {
         expect(document.querySelector(".hide")).toBeTruthy();
       },
-      { timeout: 6000 }
+      { timeout: 6500 }
     );
   });
 
@@ -139,7 +139,7 @@ describe("createAMessage", () => {
       () => {
         expect(document.querySelector(".message")).toBeFalsy();
       },
-      { timeout: 8000 }
+      { timeout: 8500 }
     );
   });
 });

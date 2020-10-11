@@ -124,7 +124,7 @@ describe("fourthListElement", () => {
   });
 
   test("element should be the fourth li", () => {
-    expect(fourthListElement.nextElementSibling.id).toEqual("test-4");
+    expect(fourthListElement.id).toEqual("test-4");
   });
 });
 

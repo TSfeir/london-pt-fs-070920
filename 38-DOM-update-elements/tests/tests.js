@@ -54,7 +54,6 @@ describe("setInnerHTMLForDiv", () => {
 	test("setInnerHTMLForDiv should add 'span' tag with text 'Hello'", () => {
 		const div = document.querySelector("div");
 		setInnerHTMLForDiv("span", "Hello");
-
 		expect(div.innerHTML).toEqual("<span>Hello</span>");
 	});
 });

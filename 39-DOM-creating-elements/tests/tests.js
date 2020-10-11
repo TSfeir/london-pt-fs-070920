@@ -203,6 +203,7 @@ describe("pushToSelectedPosition", () => {
 });
 
 // Exercise 8
+
 describe("deleteSelectedElements", () => {
 	const listType = "ul";
 	const className = "list";
@@ -221,7 +222,6 @@ describe("deleteSelectedElements", () => {
 		pushToSelectedPosition("My element", "custom_element", 3);
 		pushToSelectedPosition("My element", "custom_element", 4);
 		const list = document.querySelector(`.${className}`);
-
 		expect(list.querySelectorAll(".custom_element").length).toEqual(2);
 
 		deleteSelectedElements(".list", ".custom_element");

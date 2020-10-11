@@ -9,6 +9,27 @@
  * 4. list item text should be "Item $"($ - position in the list)
  */
 
+const createAList = () => {
+    const newList = document.createElement('ul');
+    newList.classList.add('list');
+    document.body.appendChild(newList);
+    let newItem = [];
+    let i = 0;
+
+    const getToFive = () => {
+        if (i<5) {
+            newItem[i] = document.createElement('li');
+            newItem[i].innerText = `Item ${i}`;
+            newList.appendChild(newItem[i]);
+            i++;
+        } else {
+            clearInterval(addItems);
+        }
+    }
+    const addItems = setInterval(getToFive, 1000);
+
+}
+
 /**
  * Exercise 2
  *
@@ -21,6 +42,13 @@
  * 4. set font size to 2em
  */
 
+const styleElement = () => {
+    const newList = document.querySelector('ul.myList li:nth-child(3)');
+    newList.style.backgroundColor = 'green';
+    newList.style.color = 'white';
+    newList.style.fontSize = '2em';
+}
+
 /**
  * Exercise 3
  *
@@ -29,6 +57,11 @@
  * 1. select last element from the ".myList"
  * 2. wait 2 seconds and remove the element from the list
  */
+
+ const removeLastChild = () => {
+    const lastItem = document.querySelector('ul.myList li:last-child');
+    setTimeout(() => {lastItem.remove()},2000);
+ }
 
 /**
  * Exercise 4
@@ -47,4 +80,18 @@
  * based on class "visible"
  */
 
+ const createAMessage = (message) => {
+    const newItem = document.createElement('p');
+    newItem.classList.add('message');
+    newItem.innerText = message;
+    document.body.appendChild(newItem);
+    setTimeout(() => {
+        newItem.classList.add('visible');
+        setTimeout(() => {
+            newItem.classList.add('hide');
+            setTimeout(() => {
+                newItem.remove()}, 2000);
+            }, 3000);
+    }, 3000);
+ }
 

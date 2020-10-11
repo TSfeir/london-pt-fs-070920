@@ -1,6 +1,8 @@
 let step = 0;
 let counter = 0;
 
+
+
 /**
  * Exercise 1
  *
@@ -11,6 +13,22 @@ let counter = 0;
  * NOTE: ".counter_value" should always represent the current value of {counter}
  */
 
+const counterValue = document.querySelector('.counter_value');
+
+const action = (symbol = `+` || `-`) => {
+    if (symbol === `+`) {
+        counter = parseInt(counter) + parseInt(step);
+        } else {
+            counter = parseInt(counter) - parseInt(step);
+        }
+    counterValue.innerText = counter;
+}
+
+// const counterValue = document.querySelector('.counter_value');
+// counterValue.addEventListener('click', () => {
+//     console.log(counter);
+//     counterValue.innerHTML = counter;
+// })
 /**
  * Exercise 2
  *
@@ -22,6 +40,15 @@ let counter = 0;
  * NOTE: {step} should be an integer
  *
  */
+const setStepClick = document.querySelector(`.step_form button`);
+setStepClick.addEventListener('click', (event) => {
+    const stepsSetByUser = document.querySelector('.step_form input');
+    step = stepsSetByUser.value;
+    stepsSetByUser.value = 1;
+    const stepValue = document.querySelector(`.step_value`);
+    stepValue.innerHTML = step;
+})
+
 
 /**
  * Exercise 3
@@ -32,6 +59,10 @@ let counter = 0;
  * NOTE: remember to use your {action} function
  */
 
+const decrement = document.querySelector(`.inc_dec #decrement`)
+decrement.addEventListener('click', () => {action(`-`)});
+
+
 /**
  * Exercise 4
  *
@@ -41,7 +72,10 @@ let counter = 0;
  * NOTE: remember to use your {action} function
  */
 
-/**
+const increment = document.querySelector(`.inc_dec #increment`)
+increment.addEventListener('click', () => {action(`+`)});
+
+/*
  * Exercise 5
  *
  * when the user clicks on "#auto_decrement",
@@ -49,6 +83,13 @@ let counter = 0;
  *
  * NOTE: ".counter_value" should represent current state of counter
  */
+
+const autoDecrement = document.querySelector('#auto_decrement');
+autoDecrement.addEventListener('click', () => {
+    const intervalAutoDown = setInterval(() => {action(`-`)},1000);
+    const stopAutoNegative = document.querySelector('#stop_auto');
+    stopAutoNegative.addEventListener('click', () => {clearInterval(intervalAutoDown)});
+})
 
 /**
  * Exercise 6
@@ -59,9 +100,19 @@ let counter = 0;
  * NOTE: ".counter_value" should represent current state of counter
  */
 
+const autoIncrement = document.querySelector('#auto_increment');
+autoIncrement.addEventListener('click', () => {
+    const intervalAutoUp = setInterval(() => {action(`+`)},1000);
+    const stopAutoPositive = document.querySelector('#stop_auto');
+    stopAutoPositive.addEventListener('click', () => {clearInterval(intervalAutoUp)});
+})
+
+
 /**
  * Exercise 7
  *
  * when the user clicks on "#stop_auto",
  * the auto counter should stop
  */
+
+
