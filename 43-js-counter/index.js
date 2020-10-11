@@ -35,6 +35,9 @@ const action = (symbol = `+` || `-`) => {
  * NOTE: {step} should be an integer
  *
  */
+
+const handleForm = (event) => {event.preventDefault()};
+
 const setStepClick = document.querySelector(`form.step_form`);
 setStepClick.addEventListener('submit', () => {
     const stepsSetByUser = document.querySelector('.step_form input');
@@ -42,6 +45,7 @@ setStepClick.addEventListener('submit', () => {
     stepsSetByUser.value = 1;
     const stepValue = document.querySelector(`.step_value`);
     stepValue.innerText = step;
+    handleForm;
 })
 
 

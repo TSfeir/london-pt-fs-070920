@@ -1,0 +1,51 @@
+
+.Top_Block{
+  background-color: white;
+  overflow: hidden;
+}
+
+.Top_Menu_Block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Top_Left_Block{
+  display: flex;
+  justify-content: row;
+  padding-left: 1em;
+  padding-top: 1em;
+  flex-wrap: wrap;
+}
+
+.Top_Left{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17.76px;
+  text-align: center;
+  letter-spacing: 0.188px;
+  text-transform: uppercase;
+  margin: 0 4em 0 auto;
+}
+
+
+.Top_Right_Block{
+  display: flex;
+  justify-content: row;
+  padding-right: 1em;
+  padding-top: 1em;
+  flex-wrap: wrap;
+}
+
+.Top_Right{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17.76px;
+  text-align: center;
+  letter-spacing: 0.188px;
+  text-transform: uppercase;
+  margin: 0 auto 0 4em;
+}
