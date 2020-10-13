@@ -36,10 +36,9 @@ const action = (symbol = `+` || `-`) => {
  *
  */
 
-const handleForm = (event) => {event.preventDefault()};
-
 const setStepClick = document.querySelector(`form.step_form`);
-setStepClick.addEventListener('submit', () => {
+setStepClick.addEventListener('submit', (event) => {
+    event.preventDefault();
     const stepsSetByUser = document.querySelector('.step_form input');
     step = parseInt(stepsSetByUser.value);
     stepsSetByUser.value = 1;

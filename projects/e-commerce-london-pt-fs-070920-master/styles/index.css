@@ -7,13 +7,12 @@
 .Top_Menu_Block{
   display: flex;
   justify-content: space-between;
+  padding: 1em;
 }
 
 .Top_Left_Block{
   display: flex;
   justify-content: row;
-  padding-left: 1em;
-  padding-top: 1em;
   flex-wrap: wrap;
 }
 
@@ -33,8 +32,6 @@
 .Top_Right_Block{
   display: flex;
   justify-content: row;
-  padding-right: 1em;
-  padding-top: 1em;
   flex-wrap: wrap;
 }
 
@@ -48,4 +45,29 @@
   letter-spacing: 0.188px;
   text-transform: uppercase;
   margin: 0 auto 0 4em;
+}
+
+.Top_Search_Block{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.Search_Box{
+  position: relative;
+  flex: 2 1
+}
+
+.Search_Box:after{
+  border-bottom: 2px solid #00FF9A;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  content:'';
+  display:block;
+}
+
+.Filter_Box{
+  position: relative;
 }
