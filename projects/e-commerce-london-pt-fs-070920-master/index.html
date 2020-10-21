@@ -29,6 +29,53 @@
             <div class="Filter_Box">Filter</div>
     </div>
 
+
+<form id="filtersForm" onsubmit="handleFilters(event)">
+
+    <div>
+        <h3>Colors</h3>
+        <label>
+        <input type ="checkbox" name="gray"></>
+        Gray
+        </label>
+        <label>
+            <input type ="checkbox" name="yellow"></>
+            Yellow
+            </label>
+            <label>
+                <input type ="checkbox" name="salmon"></>
+                Salmon
+                </label>
+                <label>
+                    <input type ="checkbox" name="green"></>
+                    Green
+                    </label>
+                    <label>
+                        <input type ="checkbox" name="ivory"></>
+                        Ivory
+                        </label>
+    </div>
+
+    <div>
+        <h3>Categories</h3>
+    <label>Category</label>
+    <select name ="category">
+        <option value = "Bed">Bed</option>
+        <option value = "Table">Table</option>
+        <option value = "Chair">Chair</option>
+        <option value = "Sofa">Sofa</option>
+        </select>
+    </div>
+
+    <div>
+        <h3>Price range</h3>
+        <input type="range" min=0 max=10000 />
+    </div>
+
+
+    <button type="submit">Apply filters</button>
+</form>
+
     <script src="products.js"></script>
 </body>
 </html>

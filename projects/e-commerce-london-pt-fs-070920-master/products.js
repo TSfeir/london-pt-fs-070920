@@ -275,5 +275,36 @@ const PRODUCTS = [
       weight: 28,
       comfort_level: "Medium",
     },
+
+    
   ];
+  
+
+const collectFormData = () => {
+  const filtersForm = document.getElementById("filtersForm");
+
+  const colorInputs = filtersForm.colors;
+  console.log(colorInputs);
+
+  const selectedColors = [];
+  for (let i = 0; i < colorInputs.length; i++) {
+    if (colorInputs[i].checked){
+      selectedColors.push(colorInputs[i].value);
+    }
+  }
+    return{
+      colors: selectedColors,
+      category: filtersForm.category.options[filtersForm.category.selectedIndex].value,
+      price: filtersForm.price.value,
+    }
+  
+}
+
+
+function handleFilters(event){
+  event.preventDefault();
+  console.log("Submitting form!");
+  collectFormData();
+}
+
   
