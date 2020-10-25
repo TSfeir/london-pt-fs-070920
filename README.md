@@ -43,3 +43,4 @@ git push
 - [M2L2 - Event listeners](https://docs.google.com/presentation/d/1RHRjx6_6slmYaH19GOaRgSmP0M7CGLBcBfuiHYTKtho/edit?usp=sharing)
 - [M2L3 - Interactive pages](https://docs.google.com/presentation/d/14l5rCWNuqXiEK1W_dC7ul8-A0ishx2YxQd21AC9Yff0/edit?usp=sharing)
 - [M2L4 - Wireframes & Animation](https://docs.google.com/presentation/d/1k1SoVx5vJvEZPjfV7MejWxrV7LGqnQxwWUvSeWNrfIM/edit?usp=sharing)
+- [M2L5 - Algorithms](https://docs.google.com/presentation/d/1xhchsbnYx2JB2Vkw_-CdEhoCLS3bbU2YROZUcAWfXtU/edit?usp=sharing)

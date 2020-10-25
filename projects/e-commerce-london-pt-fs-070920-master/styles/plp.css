@@ -1,0 +1,58 @@
+.Core_PLP {
+  display: flex;
+  justify-content: column;
+  padding: 2em 1em;
+}
+
+.Filter_Title {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.Filter_Container {
+  padding: 1em 0;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Filter {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  position: relative;
+}
+
+.Filter_Container:after {
+  border-bottom: 2px solid #979797;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.Filter_Detail {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.label {
+  position: relative;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 5px 0;
+}

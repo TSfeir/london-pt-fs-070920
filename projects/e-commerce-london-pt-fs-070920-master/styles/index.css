@@ -1,42 +1,47 @@
+* {
+  box-sizing: border-box;
+}
 
-.Top_Block{
+.Top_Block {
   background-color: white;
   overflow: hidden;
 }
 
-.Top_Menu_Block{
+.Top_Menu_Block {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
 }
 
-.Top_Left_Block{
+.Top_Left_Block {
   display: flex;
   justify-content: row;
   flex-wrap: wrap;
+  margin: 2em auto 2em 0;
+  padding: 0 1em;
 }
 
-.Top_Left{
-  font-family: 'Avenir';
+.Top_Left {
+  font-family: "Avenir";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 17.76px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.188px;
   text-transform: uppercase;
   margin: 0 4em 0 auto;
 }
 
-
-.Top_Right_Block{
+.Top_Right_Block {
   display: flex;
   justify-content: row;
   flex-wrap: wrap;
+  margin: 2em 0 auto 0;
+  padding: 0 1em;
 }
 
-.Top_Right{
-  font-family: 'Avenir';
+.Top_Right {
+  font-family: "Avenir";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -47,27 +52,163 @@
   margin: 0 auto 0 4em;
 }
 
-.Top_Search_Block{
+.Top_Search_Block {
   display: flex;
   justify-content: space-between;
   padding: 1em;
 }
 
-.Search_Box{
+.Search_Box {
   position: relative;
-  flex: 2 1
+  flex: 2 1;
+  right: 0.5em;
+  left: 0;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
 }
 
-.Search_Box:after{
-  border-bottom: 2px solid #00FF9A;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  content:'';
-  display:block;
+.Search_Box:after {
+  border-bottom: 2px solid #979797;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
 }
 
-.Filter_Box{
+.Filter_Box {
   position: relative;
+  left: 0.5em;
+  right: 0;
+  display: flex;
+}
+
+.Filter_Box:after {
+  border-bottom: 2px solid #979797;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.Filter_Box_textbox {
+  margin: auto;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24.59px;
+  text-align: left;
+  padding-right: 10em;
+}
+
+.Blank_Square {
+  flex: 0 0 100%;
+  position: relative;
+  background-color: white;
+  height: 50px;
+  padding: 0 2em;
+}
+
+.Image_Block {
+  justify-content: center;
+  position: relative;
+  padding: 0 1em;
+}
+
+.Background-Image {
+  filter: brightness(0.7);
+  display: block;
+  width: 100%;
+}
+
+.Text_in_Image {
+  position: absolute;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: white;
+  top: 30%;
+  left: 10%;
+  transform: translate(-10%, -30%);
+}
+
+.Text_in_Image2 {
+  position: absolute;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 36px;
+  color: white;
+  top: 40%;
+  left: 8%;
+  transform: translate(-8%, -40%);
+}
+
+.Text_in_Image2:after {
+  border-bottom: 2px solid white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.Large_Arrow {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.Blank_Square2 {
+  flex: 0 0 100%;
+  position: relative;
+  background-color: white;
+  height: 100px;
+  padding: 0 2em;
+}
+
+.Blank_Square2:after {
+  border-bottom: 2px solid #979797;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.Footer {
+  flex: 0 0 100%;
+  height: 100px;
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer_Text {
+  margin: 0 2em;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.logo_center {
+  margin: 0 2em;
 }
