@@ -30,6 +30,12 @@
   letter-spacing: 0.188px;
   text-transform: uppercase;
   margin: 0 4em 0 auto;
+  text-decoration: none;
+  color: black;
+}
+
+.Active {
+  color: #00c98d;
 }
 
 .Top_Right_Block {
@@ -71,8 +77,9 @@
 }
 
 .Search_Box:after {
-  border-bottom: 2px solid #979797;
+  border-bottom: 2px solid #2b2b2b;
   width: 100%;
+  opacity: 0.2;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -88,7 +95,8 @@
 }
 
 .Filter_Box:after {
-  border-bottom: 2px solid #979797;
+  border-bottom: 2px solid #2b2b2b;
+  opacity: 0.2;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -97,7 +105,12 @@
   display: block;
 }
 
-.Filter_Box_textbox {
+.Filter_Box_dropdown {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
   margin: auto;
   font-family: "Avenir";
   font-style: normal;
@@ -106,6 +119,41 @@
   line-height: 24.59px;
   text-align: left;
   padding-right: 10em;
+  border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+  font-family: "Avenir";
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {
+  background-color: #00c98d;
+}
+
+/* Show the dropdown menu on hover */
+.Filter_Box_dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.Filter_Box_dropdown:hover .dropbtn {
+  background-color: lightgrey;
 }
 
 .Blank_Square {
@@ -180,7 +228,8 @@
 }
 
 .Blank_Square2:after {
-  border-bottom: 2px solid #979797;
+  border-bottom: 2px solid #2b2b2b;
+  opacity: 0.2;
   width: 100%;
   position: absolute;
   bottom: 0;

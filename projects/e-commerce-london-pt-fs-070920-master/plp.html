@@ -14,13 +14,14 @@
                 <div class="Top_Left Logo">
                     <img src="styles/Logo.svg" alt="logo" class="center">
                 </div>
-                <div class="Top_Left Home">HOME</div>
-                <div class="Top_Left Shop">SHOP</div>
-                <div class="Top_Left Magazine">MAGAZINE</div>
+                <a href="./index.html" class="Top_Left Home">HOME</a>
+                <a href="./plp.html" class="Top_Left Shop Active">SHOP</a>
+                <a class="Top_Left Magazine">MAGAZINE</a>
             </div>
             <div class="Top_Right_Block">
                 <div class="Top_Right Cart">
                     <img src="styles/Cart_Button.svg" alt="cart button" class="center">
+                    <div class="Products_In_Cart">0</div>
                 </div>
                 <div class="Top_Right Login">LOGIN</div>
             </div>
@@ -28,8 +29,15 @@
         <div class="Top_Search_Block">
             <div class="Search_Box">bedroom</div>
             <div class="Filter_Box">
-                <div class="Filter_Box_textbox">Best match</div>
-                <img src="styles/Arrow.svg" alt="arrow button" class="center">
+                <div class="Filter_Box_dropdown">
+                    <button class="dropbtn">Best match</button>
+                    <div class="dropdown-content">
+                      <p class="default_filter">Best match</p>
+                      <p class="price_high_filter">Price: highest first</p>
+                      <p class="price_low_filter">Price: lowest first</p>
+                    </div>
+                  </div>
+                <img src="styles/Arrow.svg" alt="arrow button" class="filter_arrow">
             </div>
     </div>
     <div class = "Blank_Square"></div>
@@ -44,23 +52,63 @@
                 <div class = "Filter Color">Color</div>
                 <img src="styles/Path.svg" alt="path button" class="center">
             </div>
+            <form id="filtersForm">
             <div class = "Filter_Detail Color">
-                <label class="label"><input type="checkbox" name="color" value="grey" />Grey</label>
-                <label class="label"><input type="checkbox" name="color" value="yellow" />Yellow</label>
-                <label class="label"><input type="checkbox" name="color" value="salmon" />Salmon</label>
-                <label class="label"><input type="checkbox" name="color" value="green" />Green</label>    
-            </div>          
+                <label class="container"><input type="checkbox" name="color" checked value="azure"/>Azure<span class="checkmark"></span></label>
+                <label class="container"><input type="checkbox" name="color" checked value="black"/>Black<span class="checkmark"></span></label>
+                <label class="container"><input type="checkbox" name="color" checked  value="green"/>Green<span class="checkmark"></span></label>
+                <label class="container"><input type="checkbox" name="color" checked value="grey"/>Grey<span class="checkmark"></span></label>  
+                <label class="container"><input type="checkbox" name="color" checked  value="ivory"/>Ivory<span class="checkmark"></span></label>   
+                <label class="container"><input type="checkbox" name="color" checked  value="magenta"/>Magenta<span class="checkmark"></span></label>   
+                <label class="container"><input type="checkbox" name="color" checked  value="lime"/>Lime<span class="checkmark"></span></label>   
+                <label class="container"><input type="checkbox" name="color" checked  value="maroon"/>Maroon<span class="checkmark"></span></label>
+                <label class="container"><input type="checkbox" name="color" checked  value="orchid"/>Orchid<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="purple"/>Purple<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="red"/>Red<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="salmon"/>Salmon<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="sky blue"/>Sky blue<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="tan"/>Tan<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="turquoise"/>Turquoise<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="violet"/>Violet<span class="checkmark"></span></label> 
+                <label class="container"><input type="checkbox" name="color" checked  value="yellow"/>Yellow<span class="checkmark"></span></label>     
+            
+            </div>
+            </form>      
 
-            <div class = "Filter_Container Category">
-                <div class = "Filter Category">Category</div>
+            <div class="Filter_Container Category">
+                <select name="category" class="filter_category">
+                    <option value="">Select category</option>
+                    <option value="Bed">Bed</option>
+                    <option value="Table">Table</option>
+                    <option value="Chair">Chair</option>
+                    <option value="Sofa">Sofa</option>
+                </select>
                 <img src="styles/Path.svg" alt="path button" class="center">
             </div>
-            <div class = "Filter_Container Price_Range">
-                <div class = "Filter Price_Range">Price Range</div>
-                    <input type="range" name="price" min=0 max=1000 />
+            <div class = "Filter Price_Range">Price Range</div>
+            <div class = "Sliders_Container">
+                <input type="range" name="price" min=0 max=500 value=0 class="slider" id="slider_min" />
+                <input type="range" name="price" min=500 max=1000 value=1000 class="slider" id="slider_max" />
+            </div>
+            <div class = "Price_Filter_Tag">
+                <div class = "Price_Tag Min">$0</div>
+                <div class = "Price_Tag Max">$1,000</div>
             </div>
         </div>
-        <div class = "Selection_Objects"></div>
+        <div class="grid-container"></div>
+    </div>
+    <div class='Pages_Of_Products'>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>></p>
     </div>
     <footer>
         <div class = "Blank_Square2"></div>
@@ -77,5 +125,21 @@
         </div>
     </footer>
 </body>
-<script src="index.js"></script>
+<script src="plp.js"></script>
+<script src="products.js"></script>
 </html>
+
+
+<!-- <div class="grid-item">
+    <img src="Styles/Druid_Sofa.svg" alt="Druid Sofa" class="center">
+    <div class="white_rectangle">
+        <div class = "Product_Name_Text">Druid</div>
+        <div class = "Product_Type_Text">Sofa</div>
+    </div>
+    <div class="another_white_rectangle">
+        <div class = "Product_Price_Text">$2,600</div>
+        <div class = "Buy_Product_Button">
+            <img src="Styles/Cart_Button.svg" alt="Cart Button" class="center">
+        </div>
+    </div>
+</div> -->

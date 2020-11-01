@@ -9,13 +9,13 @@ The product data is provided in `products.js`.
 ## Required pages
 
 - Desktop
-    - Main
-    - Product Listing Page
-    - Product Details Page
+  - Main
+  - Product Listing Page
+  - Product Details Page
 - Mobile
-    - Main
-    - Product Listing Page
-    - Product Details Page
+  - Main
+  - Product Listing Page
+  - Product Details Page
 
 ## Required functionality
 

@@ -1,0 +1,113 @@
+.Product_Block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Product_Image {
+  display: block;
+}
+
+.image_main_product {
+  width: 683px;
+  height: 330px;
+}
+
+.Product_Details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.Product_Description {
+  position: relative;
+}
+
+.Product_Detail_Name {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 10px 0;
+}
+
+.Product_Detail_Des {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: lowercase;
+  margin: 0 0 30px 0;
+}
+
+.Product_Detail_Price {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.Product_Detail_Shipping {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.Product_Buttons {
+  position: relative;
+  margin: 50px 0 0 0;
+}
+
+.Add_To_Basket {
+  border: 1px solid;
+  text-align: center;
+  padding: 15px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  margin: 0 0 10px 0;
+}
+
+.Details {
+  border: 1px solid;
+  text-align: center;
+  padding: 15px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.Image_Carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 55px;
+  margin: 30px 15px 0 15px;
+  position: relative;
+  justify-content: center;
+}

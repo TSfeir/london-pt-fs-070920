@@ -22,6 +22,10 @@
   justify-content: space-between;
 }
 
+.Active {
+  color: #00c98d;
+}
+
 .Filter {
   font-family: Avenir;
   font-style: normal;
@@ -32,7 +36,8 @@
 }
 
 .Filter_Container:after {
-  border-bottom: 2px solid #979797;
+  border-bottom: 2px solid black;
+  opacity: 0.1;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -47,12 +52,243 @@
   padding: 15px 0;
 }
 
-.label {
+.Filter_Detail_Color {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
   position: relative;
+  padding-left: 27px;
+  margin-bottom: 12px;
+  cursor: pointer;
   font-family: Avenir;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding: 5px 0;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 20px;
+  border: 1px solid #8c8c8c;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #00c98d;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #00c98d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.Price_Range {
+  display: flex;
+  justify-content: column;
+  padding: 1em 0;
+}
+
+.Filter_Price_Range {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  position: relative;
+  width: 300px;
+}
+
+.Sliders_Container {
+  display: flex;
+  justify-content: row;
+  margin: 10px 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#slider_min {
+  margin-right: 0px;
+}
+#slider_max {
+  margin-left: 0px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: solid black;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.Price_Filter_Tag {
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+}
+
+.Price_Tag {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.grid-item {
+  width: 300px;
+  height: 370px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.thumbnail_image {
+  text-decoration: none;
+}
+
+.white_rectangle {
+  position: absolute;
+  width: 191px;
+  height: 140px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Product_Name_Text {
+  color: #000000;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.Product_Type_Text {
+  color: #000000;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.another_white_rectangle {
+  position: absolute;
+  width: 191px;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Product_Price_Text {
+  color: #000000;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.Buy_Product_Button {
+  text-align: right;
+}
+
+.Pages_Of_Products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  position: relative;
+  padding: 2em;
 }

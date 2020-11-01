@@ -1,4 +1,7 @@
 let backgroundImageSelector = 0;
+const ProductsInCart = document.querySelector(".Products_In_Cart");
+let ProductsInCartValue = parseInt(localStorage.ProductsInCart) || 0;
+ProductsInCart.innerText = ProductsInCartValue;
 
 const homeButtonSelect = document.querySelector(".Top_Left.Home");
 homeButtonSelect.addEventListener("click", () => {
