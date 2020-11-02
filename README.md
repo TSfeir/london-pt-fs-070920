@@ -28,6 +28,7 @@ git push
 [Module 1 - CLI APP](https://github.com/CodersInHoods/js-cli-project-london-pt-fs-070920)
 
 [Module 2 - E-commerce website](https://github.com/CodersInHoods/e-commerce-london-pt-fs-070920)
+
 [Module 3 - Twitter app](https://github.com/CodersInHoods/twitter-london-pt-fs-070920)
 
 ## Slides
