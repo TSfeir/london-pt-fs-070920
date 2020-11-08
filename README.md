@@ -29,6 +29,8 @@ git push
 
 [Module 2 - E-commerce website](https://github.com/CodersInHoods/e-commerce-london-pt-fs-070920)
 
+[Module 3 - Twitter app](https://github.com/CodersInHoods/twitter-london-pt-fs-070920)
+
 ## Slides
 
 - [M1L1 - Intro](https://docs.google.com/presentation/d/1d5d_zA3JPCZEV9oX_YxsOmIWCai62CtGVfQeNP5wAWw/edit?usp=sharing)
@@ -44,3 +46,7 @@ git push
 - [M2L3 - Interactive pages](https://docs.google.com/presentation/d/14l5rCWNuqXiEK1W_dC7ul8-A0ishx2YxQd21AC9Yff0/edit?usp=sharing)
 - [M2L4 - Wireframes & Animation](https://docs.google.com/presentation/d/1k1SoVx5vJvEZPjfV7MejWxrV7LGqnQxwWUvSeWNrfIM/edit?usp=sharing)
 - [M2L5 - Algorithms](https://docs.google.com/presentation/d/1xhchsbnYx2JB2Vkw_-CdEhoCLS3bbU2YROZUcAWfXtU/edit?usp=sharing)
+- [M2L6 - Sorting, Filtering, More Project Features](https://docs.google.com/presentation/d/1V6ouaPUnqy6IZKHKuQrtpN1q-PFA1jD7Wpn8cK5qN-U/edit?usp=sharing)
+- [M2L7 - CSS Grid](https://docs.google.com/presentation/d/1i9EBV5p5HdNRmoQnbKs5-KvBLxLQB7oO35i8-wx40D4/edit?usp=sharing)
+- [M3L1 - Async Javascript](https://docs.google.com/presentation/d/1sPh0IP1wBIFS3DEVNPdgXpohx8MBzqxPu0P__B7w9zo/edit?usp=sharing)
+- [M3L2 - More fetching](https://docs.google.com/presentation/d/1KWAhGImMoWEj_pxnLjAfI-SwZqnEwzR_cSOf_G0I008/edit?usp=sharing)
