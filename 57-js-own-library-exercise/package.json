@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "concat": "concat -o ./tests/index.test.js ./index.js ./tests/tests.js ",
-    "test": "npm run concat && jest"
+    "test": "jest",
+    "test:dev": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concat": "^1.0.3",
-    "husky": "^4.2.3",
-    "jest": "^24.9.0"
+    "jest": "^25.1.0"
   }
 }
