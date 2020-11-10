@@ -50,3 +50,4 @@ git push
 - [M2L7 - CSS Grid](https://docs.google.com/presentation/d/1i9EBV5p5HdNRmoQnbKs5-KvBLxLQB7oO35i8-wx40D4/edit?usp=sharing)
 - [M3L1 - Async Javascript](https://docs.google.com/presentation/d/1sPh0IP1wBIFS3DEVNPdgXpohx8MBzqxPu0P__B7w9zo/edit?usp=sharing)
 - [M3L2 - More fetching](https://docs.google.com/presentation/d/1KWAhGImMoWEj_pxnLjAfI-SwZqnEwzR_cSOf_G0I008/edit?usp=sharing)
+- [M3L3 - Advance JS usage](https://docs.google.com/presentation/d/1rRmTgoUjwIqliRZd2qjhFIUQWATqGSMwLRZ0zPSbwCE/edit?usp=sharing)
