@@ -51,3 +51,8 @@ git push
 - [M3L1 - Async Javascript](https://docs.google.com/presentation/d/1sPh0IP1wBIFS3DEVNPdgXpohx8MBzqxPu0P__B7w9zo/edit?usp=sharing)
 - [M3L2 - More fetching](https://docs.google.com/presentation/d/1KWAhGImMoWEj_pxnLjAfI-SwZqnEwzR_cSOf_G0I008/edit?usp=sharing)
 - [M3L3 - Advance JS usage](https://docs.google.com/presentation/d/1rRmTgoUjwIqliRZd2qjhFIUQWATqGSMwLRZ0zPSbwCE/edit?usp=sharing)
+- [M3L4 - Code-along](https://docs.google.com/presentation/d/1dBO8Kcc0G7JChmDgPsrYv2Ne__jj4ZXVQg_-2F26Oy4/edit?usp=sharing)
+- [M3L5 - Object Oriented Programming](https://docs.google.com/presentation/d/1iI_D2ezLQLly0Mpozr_GaWyM-k0oRoKBLEq8neBkEXk/edit?usp=sharing)
+- [M3L6 - OOP and TypeScript](https://docs.google.com/presentation/d/1eBlTCIaY-M6w5g42dJ1oTKJPZmrJLUHkn4lxaQ-wFic/edit?usp=sharing)
+- [M3L7 - Testing in JS](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
+- [M3L8 - HTML&CSS Code along](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)

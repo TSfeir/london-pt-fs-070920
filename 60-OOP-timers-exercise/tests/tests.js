@@ -1,0 +1,129 @@
+const {
+	fireEvent,
+} = require("@testing-library/dom/dist/@testing-library/dom.umd.js");
+
+describe("1. add new timer", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+		timersCount = 0;
+	});
+
+	test("should add a new timer on '#new_timer' button click", () => {
+		fireEvent.click(newTimer);
+		expect(Boolean(document.querySelectorAll(".timers .timer_1"))).toBe(true);
+	});
+
+	test("shouldn't add a new timer on '#new_timer' button click when 5 exists", () => {
+		for (let i = 0; i < 10; i++) {
+			fireEvent.click(newTimer);
+		}
+
+		expect(document.querySelectorAll(".timers .timer").length).toEqual(5);
+	});
+});
+
+describe("2. timer should continuously count up", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+	});
+
+	test("should display time elapsed", async () => {
+		fireEvent.click(newTimer);
+
+		await new Promise((resolve) => setTimeout(resolve, 2500));
+
+		const firstTimer = document.querySelector(".timer");
+
+		const secondsDisplayed = firstTimer
+			.querySelector("h3")
+			.textContent.split(" ")[0];
+
+		expect(parseInt(secondsDisplayed)).toBeGreaterThan(0);
+	});
+});
+
+describe("3. reset timer", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+	});
+
+	test("should reset timer on click", async () => {
+		fireEvent.click(newTimer);
+		const firstTimer = document.querySelector(".timer");
+		const firstTimerH3 = firstTimer.querySelector("h3");
+		const firstTimerReset = firstTimer.querySelector(".reset");
+
+		await new Promise((resolve) => setTimeout(resolve, 2500));
+		expect(parseInt(firstTimerH3.innerHTML.split(" ")[0])).toBeGreaterThan(0);
+
+		fireEvent.click(firstTimerReset);
+		await new Promise((resolve) => setTimeout(resolve, 100));
+		expect(parseInt(firstTimerH3.innerHTML.split(" ")[0])).toEqual(0);
+	});
+});
+
+describe("4. stop timer", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+	});
+
+	test("should stop timer on click", async () => {
+		fireEvent.click(newTimer);
+		const firstTimer = document.querySelector(".timer");
+		const firstTimerH3 = firstTimer.querySelector("h3");
+		const firstTimerStop = firstTimer.querySelector(".stop");
+
+		await new Promise((resolve) => setTimeout(resolve, 1500));
+		fireEvent.click(firstTimerStop);
+		const valueOnStop = parseInt(firstTimerH3.innerHTML.split(" ")[0]);
+		expect(valueOnStop).toBeGreaterThan(0);
+
+		await new Promise((resolve) => setTimeout(resolve, 2000));
+		const valueAfter = parseInt(firstTimerH3.innerHTML.split(" ")[0]);
+		expect(valueOnStop === valueAfter).toBe(true);
+	});
+});
+
+describe("5. remove timer", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+	});
+
+	test("should remove timer on click", () => {
+		fireEvent.click(newTimer);
+		fireEvent.click(newTimer);
+
+		const timers = document.querySelectorAll(".timer");
+		const firstTimerCross = timers[0].querySelector(".remove");
+		expect(timers.length).toEqual(2);
+
+		fireEvent.click(firstTimerCross);
+		expect(document.querySelectorAll(".timer").length).toEqual(1);
+	});
+});
+
+describe("6. No more than 5 timers", () => {
+	const newTimer = document.querySelector("#new_timer");
+
+	beforeEach(() => {
+		document.querySelector(".timers").innerHTML = "";
+	});
+
+	test("shouldn't add a new timer on '#new_timer' button click when 5 already exist", () => {
+		for (let i = 0; i < 10; i++) {
+			fireEvent.click(newTimer);
+		}
+
+		expect(document.querySelectorAll(".timer").length).toEqual(5);
+	});
+});
