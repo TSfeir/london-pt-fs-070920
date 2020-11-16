@@ -55,7 +55,7 @@ const displaySearchedMember = () => {
   resultEl.innerHTML = "";
   const searchedMember = searchEl.value;
   const filteredMembers = allSwornMembers.filter((member) => {
-    return member.name === searchedMember;
+    return member.name.includes(searchedMember);
   });
   filteredMembers.forEach((member) => {
     displaySwornMember(member);

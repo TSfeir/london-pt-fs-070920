@@ -26,6 +26,7 @@ const syncCookIngredient = ({ name, time }) => {
  * log the message "Soup is ready to serve"
  */
 
+<<<<<<< HEAD
 const syncCookMeal = (ingredientsToCook) => {
   ingredientsToCook.forEach((el) => {
     syncCookIngredient(el);
@@ -33,6 +34,8 @@ const syncCookMeal = (ingredientsToCook) => {
   return console.log("Soup is ready to serve");
 };
 
+=======
+>>>>>>> cee6823f2c63bd14d4962ef853319d48c12a0683
 /**
  * Exercise 2
  *
