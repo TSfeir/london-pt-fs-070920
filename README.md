@@ -31,6 +31,8 @@ git push
 
 [Module 3 - Twitter app](https://github.com/CodersInHoods/twitter-london-pt-fs-070920)
 
+[Module 4 Project - StockMarket](https://github.com/CodersInHoods/stock-tader-project-london-pt-fs-070920)
+
 ## Slides
 
 - [M1L1 - Intro](https://docs.google.com/presentation/d/1d5d_zA3JPCZEV9oX_YxsOmIWCai62CtGVfQeNP5wAWw/edit?usp=sharing)
@@ -56,3 +58,5 @@ git push
 - [M3L6 - OOP and TypeScript](https://docs.google.com/presentation/d/1eBlTCIaY-M6w5g42dJ1oTKJPZmrJLUHkn4lxaQ-wFic/edit?usp=sharing)
 - [M3L7 - Testing in JS](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
 - [M3L8 - HTML&CSS Code along](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
+- [M4L1 - Event loop, Global, Process, Filesystem, Path](https://docs.google.com/presentation/d/1tvPdNNsLShWS5xqvI4yRMgKJ-EzbWcM12ofH-uYI82Q/edit?usp=sharing)
+- [M4L2 - Express](https://docs.google.com/presentation/d/1NwW4LIBNOvcRGrX6SP1YtTKUMeY3CMSzRA1M7XuyCPE/edit?usp=sharing)
