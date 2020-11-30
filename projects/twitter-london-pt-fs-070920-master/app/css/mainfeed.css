@@ -3,21 +3,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-color: red;
-  border-style: solid;
   width: 400px;
   margin: auto;
   padding: 20px 0;
 }
 
-.avatar_container {
+.avatar_wrapper {
   margin-right: 10px;
   width: 90px;
   height: 90px;
   border-radius: 100%;
+  border: 1px solid;
+  border-color: gray;
 }
 
-.avatar_container img {
+.avatar_wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 100%;
@@ -88,8 +88,6 @@
 .tweets_feed {
   align-items: center;
   justify-content: center;
-  border-color: red;
-  border-style: solid;
   width: 400px;
   margin: auto;
 }
@@ -110,7 +108,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  background-color: #faff00;
+  background-color: lightgrey;
 }
 
 .tweet_username {
@@ -162,4 +160,36 @@
   font-size: 14px;
   line-height: 16px;
   color: #909090;
+}
+
+.write_tweet_container {
+  width: 90px;
+  height: 90px;
+  right: 300px;
+  bottom: 10px;
+  position: fixed;
+}
+
+.comment_tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: auto;
+}
+
+.comment_tweet input {
+  display: absolute;
+  width: 380px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.write_tweet {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

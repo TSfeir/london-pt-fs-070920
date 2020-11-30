@@ -9,8 +9,11 @@
 	</head>
 	<body>
         <div class="profile_header">
-            <div class="avatar_container">
-                <img src="https://placekitten.com/90/90" />
+            <div class="avatar_wrapper">
+                <label for="upload">
+                    <img src="https://placekitten.com/90/90" />
+                    <input type="file" id="upload" style="display:none">
+              </label>
             </div>
             <div class="profile_text_container">
                 <h3 class="profile_name">Coders in Hoods</h3>
@@ -67,7 +70,9 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="write_tweet_container">
+            <img class="write_tweet" src="images/create_new_tweet.svg"/>
         </div>
 	</body>
 	<script type="module" src="./js/mainfeed.js"></script>
