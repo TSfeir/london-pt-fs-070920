@@ -62,3 +62,5 @@ git push
 - [M4L2 - Express](https://docs.google.com/presentation/d/1pXv_Gt-KowAFL8W4o696_BP8M4cnEVMH-jZy3_c7Y2k/edit?usp=sharing)
 - [M4L3 - MySql](https://docs.google.com/presentation/d/1snZBNBUxa79FLENKbsa_R3WxVluIgZtBBne0UDtwp5o/edit?usp=sharing)
 - [M4L4 - MongoDB](https://docs.google.com/presentation/d/1bkTG7Ihr3wz7tn3-OsTUTRZq5ihdc9XNoq_xBVmTF5o/edit?usp=sharing)
+- [M4L5 - Authentication](https://docs.google.com/presentation/d/1r65E-8dCgh499wRaLwKxDNVX4rbp0slanrpz7M8HtBc/edit?usp=sharing)
+- [M4L6 - Server Side rendering](https://docs.google.com/presentation/d/17cgiWTrW8W5dhJdHcW8LdTVsqcTDBp5bMfDbfuy7awA/edit?usp=sharing)
