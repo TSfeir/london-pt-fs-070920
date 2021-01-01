@@ -64,3 +64,5 @@ git push
 - [M4L4 - MongoDB](https://docs.google.com/presentation/d/1bkTG7Ihr3wz7tn3-OsTUTRZq5ihdc9XNoq_xBVmTF5o/edit?usp=sharing)
 - [M4L5 - Authentication](https://docs.google.com/presentation/d/1r65E-8dCgh499wRaLwKxDNVX4rbp0slanrpz7M8HtBc/edit?usp=sharing)
 - [M4L6 - Server Side rendering](https://docs.google.com/presentation/d/17cgiWTrW8W5dhJdHcW8LdTVsqcTDBp5bMfDbfuy7awA/edit?usp=sharing)
+- [M4L7 - Serverless](https://docs.google.com/presentation/d/1VaSyKXB-i9Ck9c6JHkBBPOPotDea-0qta3SUgdiIWQI/edit?usp=sharing)
+- [M4L8 - Socket.io](https://docs.google.com/presentation/d/1M7dNZdE05iHt6ObjBcF2WsLH8XJue4bO497pLgONac4/edit?usp=sharing)
